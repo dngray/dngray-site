@@ -1,0 +1,62 @@
+==================================================================
+https://keybase.io/dngray
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://dngray.netlify.com
+  * I am dngray (https://keybase.io/dngray) on keybase.
+  * I have a public key with fingerprint 588F 6E4E ABE8 C7B5 52D0  0FA6 4191 1F72 2B0F 9AE3
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01169b12c89b8405ebb50b58c1897f151e962a62529b5793187d7c69f4865745a0920a",
+      "fingerprint": "588f6e4eabe8c7b552d00fa641911f722b0f9ae3",
+      "host": "keybase.io",
+      "key_id": "41911f722b0f9ae3",
+      "kid": "01169b12c89b8405ebb50b58c1897f151e962a62529b5793187d7c69f4865745a0920a",
+      "uid": "1897dabf5b2a64de48eb24ee9b992b19",
+      "username": "dngray"
+    },
+    "service": {
+      "hostname": "dngray.netlify.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1573895567,
+  "expire_in": 157680000,
+  "prev": "a9d8256213fef7207d695851c899c357bfc2b57c733dab89caa90025c0d314f7",
+  "seqno": 6,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+
+owGtUr9rFEEYXU2EeBCSQg4sRBxB/BEuM7M7v04s/AcSFAQV9ZiZ/fZuyGX33N07
+c4R0IoJFFFMpiEQQRBAsLCxMa2FxNvaSNBFsrMQmOHuYQrB0mmHe970373t8D6cn
+glr94qPj+bmZJzsHPn0zwc3Rh6eryGTxEDVX0RKML+jGUJStJRejJsKEcGUItVIZ
+GWEGxjBsmLREKpEQRkBxqjllVBkmVEikiIXlKokkZyJiGiuKNZpDiUvbkPdyl5Ze
+lkmZcIhAG5BWGMZojHGieUQUIYmg1OBEaQg9sZMVFcObM7qAhss85h+tsb1/9P9n
+3/2xXMWKtUmY8aQohkiCoRGAMkpRQ1TVWECe6mXw3XHazvUQrc0hjw2chSrWao6/
+6o0Uyq5Lhg2bLXt+L8/KzGZdX++UZa9oVvxy2KsId8C0/ki1jEtjn6VnDCAvXJai
+JvGdtnSVNmEilIoxLuYQrPRcDi2XjmEusT/VPzDwklrFNyRlnJIwAZ8gFjFXTDLi
+E1M2ZMIklvporAhDP7lUVmuFMWUWxyGJEoGq6W6nGWpy71O3vWbh2qku+zmgtdr9
+/mRQrwXH6icmr66nC693P767/Hnm5f76HTpY7V5QOzy7j7w6HeydfDu18uP540u/
+Bm9GnY17aOP7kc72++tTF3YXp2+1RovBHts+emrr7otrO2fp1yvPzn+Znd8kE1sL
+Zx7Y+fXOz83abw==
+=Ua8O
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/dngray
+
+==================================================================
