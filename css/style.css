@@ -1,0 +1,199 @@
+:root {
+  /* https://github.com/jan-warchol/selenized/blob/master/the-values.md */
+
+  /* Selenized light */
+  --light-bg: #fbf3db;
+  --light-black: #ece3cc;
+  --light-br_black: #d5cdb6;
+  --light-white: #909995;
+  --light-fg: #53676d;
+  --light-br_white: #3a4d53;
+  --light-red: #d2212d;
+  --light-green: #489100;
+  --light-yellow: #ad8900;
+  --light-blue: #0072d4;
+  --light-magenta: #ca4898;
+  --light-cyan: #009c8f;
+  --light-orange: #c25d1e;
+  --light-violet: #8762c6;
+  --light-br_red: #cc1729;
+  --light-br_green: #428b00;
+  --light-br_yellow: #a78300;
+  --light-br_blue: #006dce;
+  --light-br_magenta: #c44392;
+  --light-br_cyan: #00978a;
+  --light-br_orange: #bc5819;
+  --light-br_violet: #825dc0;
+
+  /* Selenized dark */
+  --dark-bg: #103c48;
+  --dark-black: #184956;
+  --dark-br_black: #2d5b69;
+  --dark-white: #72898f;
+  --dark-fg: #adbcbc;
+  --dark-br_white: #cad8d9;
+  --dark-red: #fa5750;
+  --dark-green: #75b938;
+  --dark-yellow: #dbb32d;
+  --dark-blue: #4695f7;
+  --dark-magenta: #f275be;
+  --dark-cyan: #41c7b9;
+  --dark-orange: #ed8649;
+  --dark-violet: #af88eb;
+  --dark-br_red: #ff665c;
+  --dark-br_green: #84c747;
+  --dark-br_yellow: #ebc13d;
+  --dark-br_blue: #58a3ff;
+  --dark-br_magenta: #ff84cd;
+  --dark-br_cyan: #53d6c7;
+  --dark-br_orange: #fd9456;
+  --dark-br_violet: #bd96fa;
+
+  /* Selenized black */
+  --black-bg: #181818;
+  --black-black: #252525;
+  --black-br_black: #3b3b3b;
+  --black-white: #777777;
+  --black-fg: #b9b9b9;
+  --black-br_white: #dedede;
+  --black-red: #ed4a46;
+  --black-green: #70b433;
+  --black-yellow: #dbb32d;
+  --black-blue: #368aeb;
+  --black-magenta: #eb6eb7;
+  --black-cyan: #3fc5b7;
+  --black-orange: #e67f43;
+  --black-violet: #a580e2;
+  --black-br_red: #ff5e56;
+  --black-br_green: #83c746;
+  --black-br_yellow: #efc541;
+  --black-br_blue: #4f9cfe;
+  --black-br_magenta: #ff81ca;
+  --black-br_cyan: #56d8c9;
+  --black-br_orange: #fa9153;
+  --black-br_violet: #b891f5;
+
+  /* Selenized white */
+  --white-bg: #ffffff;
+  --white-black: #ebebeb;
+  --white-br_black: #cdcdcd;
+  --white-white: #878787;
+  --white-fg: #474747;
+  --white-br_white: #282828;
+  --white-red: #d6000c;
+  --white-green: #1d9700;
+  --white-yellow: #c49700;
+  --white-blue: #0064e4;
+  --white-magenta: #dd0f9d;
+  --white-cyan: #00ad9c;
+  --white-orange: #d04a00;
+  --white-violet: #7f51d6;
+  --white-br_red: #bf0000;
+  --white-br_green: #008400;
+  --white-br_yellow: #af8500;
+  --white-br_blue: #0054cf;
+  --white-br_magenta: #c7008b;
+  --white-br_cyan: #009a8a;
+  --white-br_orange: #ba3700;
+  --white-br_violet: #6b40c3;
+
+  /* Default mode */
+  --switch-shadow-color: var(--white-switch-shadow);
+  --switch-icon: var(--white-switch-icon);
+  --switch-text: var(--white-switch-fg);
+  --text-color: var(--light-text);
+  --bg-color: var(--white-bg);
+  --theme-color: var(--white-theme);
+}
+
+/* White mode */
+#theme-switch1:checked ~ #page {
+  --text-color: var(--white-fg);
+  --bg-color: var(--white-bg);
+  --theme-color: var(--white-theme);
+}
+
+/* Black mode */
+#theme-switch2:checked ~ #page {
+  --text-color: var(--black-fg);
+  --bg-color: var(--black-bg);
+  --theme-color: var(--black-theme);
+}
+
+/* Light mode */
+#theme-switch3:checked ~ #page {
+  --text-color: var(--light-fg);
+  --bg-color: var(--light-bg);
+  --theme-color: var(--light-theme);
+}
+
+/* Dark mode */
+#theme-switch4:checked ~ #page {
+  --text-color: var(--dark-fg);
+  --bg-color: var(--dark-bg);
+  --theme-color: var(--dark-theme);
+}
+
+/* Theme switcher */
+.theme-switch { /* Hides the radio buttons */
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.switch-label {
+  background: var(--text-color);
+  border: 3px solid var(--text-color);
+  border-radius: 5px;
+  color: var(--bg-color);
+  cursor: pointer;
+  display: inline-block;
+  font-size: 125%;
+  margin: 20px 0 20px 20px;
+  padding: 8px 12px;
+  transition: box-shadow .2s, border .2s;
+  font: normal 180%/1.4 monospace;
+}
+
+.theme-switch:focus + .switch-label,
+.switch-label:hover {
+  box-shadow: 0 0 10px #777777;
+  border: 3px solid #53d6c7;
+  border-radius: 5px;
+}
+
+/* Styling */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #181818;
+  color: #474747;
+}
+
+#page {
+  background: var(--bg-color);
+  color: var(--text-color);
+  font: normal 150%/1.4 monospace;
+  min-height: 100%;
+  transition: color .2s, background-color .2s;
+}
+
+#content {
+  margin: auto;
+  max-width: 60ch;
+  padding: 2ch;
+}
+
+a {
+  color: var(--theme-color);
+}
+
+footer {
+  padding: 20px 0;
+  margin: 50px 0;
+  border-top: 1px solid var(--text-color);
+}
