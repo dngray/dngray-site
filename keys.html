@@ -1,24 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>keys</title>
-  </head>
+    <title>Dark Mode Baseline</title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
+    <meta name="supported-color-schemes" content="dark light"/>
+    <meta name="color-scheme" content="dark light"/>
+    <meta name="theme-color" content=""/>
+
+    <script>
+      if (window.location.protocol === 'http:') {
+        window.location.protocol = 'https:';
+      }
+      // If `prefers-color-scheme` is not supported, fall back to light mode.
+      // In this case, light.css will be downloaded with `highest` priority.
+      if (!window.matchMedia('(prefers-color-scheme)').matches) {
+        document.documentElement.style.display = 'none';
+        document.head.insertAdjacentHTML(
+          'beforeend',
+          '<link rel="stylesheet" href="css/light.css" onload="document.documentElement.style.display = ``">'
+        );
+    </script>
+
+    <!--
+      Conditionally either load the light or the dark stylesheet. The matching file
+      will be downloaded with `highest`, the non-matching file with `lowest`
+      priority. If the browser doesn't support `prefers-color-scheme`, the media
+      query is unknown and the files are downloaded with `lowest` priority (but
+      above I already force `highest` priority for my default light experience).
+    -->
+
+    <link rel="stylesheet" href="css/dark.css" media="(prefers-color-scheme: dark)">
+    <link rel="stylesheet" href="css/light.css" media="(prefers-color-scheme: no-preference), (prefers-color-scheme: light)">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="manifest" href="manifest/manifest-light.webmanifest" data-href-light="manifest/manifest-light.webmanifest" data-href-dark="manifest/manifest-dark.webmanifest">
+    <link rel="icon" href="img/light.png" data-href-light="img/light.png" data-href-dark="img/dark.png" sizes="144x144">
+
+    <script type="module" src="./js/dark-mode-toggle.mjs"></script>
+    <script defer src="js/darkmode.js"></script>
+  </head>
   <body>
-    <!-- https://dev.to/alexandersandberg/creating-a-website-theme-switcher-with-css-only-4kp2 -->
-    <input type="radio" class="theme-switch" name="theme-switch" id="theme-switch1">
-    <label for="theme-switch1" class="switch-label">White</label>
-    <input type="radio" class="theme-switch" name="theme-switch" id="theme-switch2">
-    <label for="theme-switch2" class="switch-label">Black</label>
-    <input type="radio" class="theme-switch" name="theme-switch" id="theme-switch3">
-    <label for="theme-switch3" class="switch-label">Light</label>
-    <input type="radio" class="theme-switch" name="theme-switch" id="theme-switch4">
-    <label for="theme-switch4" class="switch-label">Dark</label>
-  <div id="page">
+    <dark-mode-toggle appearance="toggle"></dark-mode-toggle>
     <div id="content">
       <main>
           <h2>Matrix</h2>
@@ -36,9 +61,6 @@
           Key fingerprint = 588F 6E4E ABE8 C7B5 52D0  0FA6 4191 1F72 2B0F 9AE3</pre>
           <a href='/' rel='noopener noreferrer'>&lt;-- home </a>
       </main>
-      <!--<footer>
-      </footer>-->
     </div>
-  </div>
   </body>
 </html>
