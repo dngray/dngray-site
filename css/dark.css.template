@@ -1,0 +1,37 @@
+/* !!COL!{name}! */
+
+:root {
+  --background-color: var(--black);
+  --color: var(--fg);
+  --link-color: var(--blue);
+  --hover-color: var(--br_blue);
+  --icon-filter: invert(100%);
+  --icon-filter_hover: invert(40%);
+  --image-filter: grayscale(50%);
+  --main-headline-color: var(--fg);
+  --accent-background-color: var(--blue);
+  --accent-color: var(--black);
+
+  --bg: !!COL!{bg.srgb}!);
+  --black: !!COL!{black.srgb}!;
+  --br_black: !!COL!{br_black.srgb}!;
+  --white: !!COL!{white.srgb}!;
+  --fg: !!COL!{fg.srgb}!;
+  --br_white: !!COL!{br_white.srgb}!;
+  --red: !!COL!{red.srgb}!;
+  --green: !!COL!{green.srgb}!;
+  --yellow: !!COL!{yellow.srgb}!;
+  --blue: !!COL!{blue.srgb}!;
+  --magenta: !!COL!{magenta.srgb}!;
+  --cyan: !!COL!{cyan.srgb}!;
+  --orange: !!COL!{orange.srgb}!;
+  --violet: !!COL!{violet.srgb}!;
+  --br_red: !!COL!{br_red.srgb}!;
+  --br_green: !!COL!{br_green.srgb}!;
+  --br_yellow: !!COL!{br_yellow.srgb}!;
+  --br_blue: !!COL!{br_blue.srgb}!;
+  --br_magenta: !!COL!{br_magenta.srgb}!;
+  --br_cyan: !!COL!{br_cyan.srgb}!;
+  --br_orange: !!COL!{br_orange.srgb}!;
+  --br_violet: !!COL!{br_violet.srgb}!;
+}
