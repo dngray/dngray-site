@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Email</title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <meta name="supported-color-schemes" content="dark light"/>
+    <meta name="color-scheme" content="dark light"/>
+    <meta name="theme-color" content=""/>
+
+    <script>
+      if (window.location.protocol === 'http:') {
+        window.location.protocol = 'https:';
+      }
+      // If `prefers-color-scheme` is not supported, fall back to light mode.
+      // In this case, light.css will be downloaded with `highest` priority.
+      if (!window.matchMedia('(prefers-color-scheme)').matches) {
+        document.documentElement.style.display = 'none';
+        document.head.insertAdjacentHTML(
+          'beforeend',
+          '<link rel="stylesheet" href="../css/light.css" onload="document.documentElement.style.display = ``">'
+        );
+    </script>
+
+    <!--
+      Conditionally either load the light or the dark stylesheet. The matching file
+      will be downloaded with `highest`, the non-matching file with `lowest`
+      priority. If the browser doesn't support `prefers-color-scheme`, the media
+      query is unknown and the files are downloaded with `lowest` priority (but
+      above I already force `highest` priority for my default light experience).
+    -->
+
+    <link rel="stylesheet" href="../css/dark.css" media="(prefers-color-scheme: dark)">
+    <link rel="stylesheet" href="../css/light.css" media="(prefers-color-scheme: no-preference), (prefers-color-scheme: light)">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="manifest" href="../manifest/manifest-light.webmanifest" data-href-light="../manifest/manifest-light.webmanifest" data-href-dark="../manifest/manifest-dark.webmanifest">
+    <link rel="icon" href="../img/emoji_u2600.svg" data-href-light="../img/emoji_u2600.svg" data-href-dark="../img/emoji_u1f318.svg" sizes="144x144">
+
+    <script type="module" src="../js/dark-mode-toggle.mjs"></script>
+    <script defer src="../js/darkmode.js"></script>
+  </head>
+  <body>
+    <dark-mode-toggle appearance="toggle"></dark-mode-toggle>
+    <div id="content">
+      <main>
+        <h2>Email</h2>
+        <p>
+          <div class="dng_disroot">[Enable JavaScript]</div>
+          <div>
+            <span class="dngray_ptio">[Enable JavaScript]</span> -
+            <a href="https://privacytools.io">PrivacyTools</a> related
+          </div>
+          <script src="../js/main.js"></script>
+        </p>
+        <p>
+          See <a href='../keys' rel='noopener noreferrer'>pgp keys</a> for encrypted email.
+        </p>
+          <a href='../' rel='noopener noreferrer'>&lt;-- home </a>
+      </main>
+    </div>
+  </body>
+</html>
