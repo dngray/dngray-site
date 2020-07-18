@@ -3,22 +3,18 @@ Hash: SHA512
 
 matrix: Identity keys:
 
-- - User: @dngray:privacytools.io
-  - Device ID:      KWZQFAUCFK
-    - Display name: Riot Desktop on Linux
-    - Device key:   vLhf cljp 1wqn i6eH MlPK Cc7N flWE ZjXQ ZLYV FbfG 6mw
+- - - User: @dngray:privacytools.io
+  - Device ID:      JTXDRIZWCM
+    - Display name: Element Desktop (Linux)
+    - Device key:   JJaH f79w U+TZ cgvj C8j8 jZqm xYbu Pm5I QLJs v+PA O7Q
 
-  - Device ID:      ACFGJHQNQF
-    - Display name: Riot Desktop on Linux
-    - Device key:   iolG mEd/ J8oj A/CN 94dC Mknz uNNl j2xY 39LQ ocQ1 bbs
-
-  - Device ID:   ARKXBLYYSR
-    - Display name: Weechat Matrix
-    - Device key:  C6Mz 8mZI IAvh 4gMD m5hE 9IpR EWqH Au0G R5fm IVFl HH8
+  - Device ID:      PARBKOUQOL
+    - Display name: Element Desktop (Linux)
+    - Device key:   AaD6 5LRv 1TW8 lqJc IMBa 1W2v QNEG h4JI +71X 5Mz5 GnY
 -----BEGIN PGP SIGNATURE-----
 
-iHUEARYKAB0WIQRYj25Oq+jHtVLQD6ZBkR9yKw+a4wUCXhRCywAKCRBBkR9yKw+a
-4zgKAQCfivahNsv/VH2fRusCa7pq9JahSoNLNb+Ip0jIQ5RDZwEApAgDN7qmUruv
-tf/5NL+faSvX523A2G8iRgq8l84FOQo=
-=Fbxi
+iHUEARYKAB0WIQRYj25Oq+jHtVLQD6ZBkR9yKw+a4wUCXxKjzwAKCRBBkR9yKw+a
+41jxAQCoJT5n9t4hwyzP2WkDoQUOro1IH3LROfP2XZAttQvRBQEA4PqP4Ij5XvRD
+kt20v9knWKG0qfaIXz0vIkv4pK8Sqw8=
+=SLQT
 -----END PGP SIGNATURE-----
